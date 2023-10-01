@@ -8,6 +8,7 @@ import Profile from './pages/Profile'
 import ForgotPassword from './pages/ForgotPassword'
 import SignUp from './pages/SignUp'
 import Offers from './pages/Offers'
+import Header from './components/Header'
 
 function App() {
  
@@ -16,6 +17,8 @@ function App() {
     <>
     
     <Router>
+       <Header/>
+       
        <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
@@ -26,6 +29,7 @@ function App() {
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/forgotpassword' element={<ForgotPassword/>}/>
        </Routes>
+   
     </Router>
     
     </>
