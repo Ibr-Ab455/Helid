@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router'
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai'
+import Auth from './Auth';
 
 function SignUp() {
 
@@ -24,7 +25,7 @@ function SignUp() {
 
   return (
     <div className='w-full mt-20'>
-    <div className='bg-[#050533] w-[80vh] h-[65vh] mx-auto rounded'>
+    <div className='bg-[#050533] w-[80vh] h-[68vh] mx-auto rounded'>
       <div className=''>
         
         <h2 className='text-xl text-center mb-3 pt-4 text-white'>Login</h2>
@@ -45,12 +46,12 @@ function SignUp() {
             </div>
          
           <button className='w-[90%] bg-[#E34234] rounded p-2 text-[18px] text-white cursor-pointer'>Login</button>
+          <Auth/>
         </form>
 
-        <h3 className='text-white pl-8 pt-3'> already have an account? 
+        <h3 className='text-white pl-8 pt-2'> already have an account? 
         <span className='text-[#E34234] cursor-pointer' onClick={() => navigate('/login')}>login</span>
         </h3>
-     
       </div>
     </div>
   </div>
